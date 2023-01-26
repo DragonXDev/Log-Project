@@ -8,11 +8,11 @@
 <script>
     import {gsap} from "gsap";
     import {ScrollTrigger} from "gsap/dist/ScrollTrigger.js";
-    import { onMount } from 'svelte';
+    import { onMount, onDestroy} from 'svelte';
 
     gsap.registerPlugin(ScrollTrigger)
 
-    onMount(() => {
+    const init = () => {
     const btn = document.querySelector("#explore")
     let isAnimationInAction=false;
     btn.addEventListener('click',()=>{
@@ -32,11 +32,20 @@
         .to('#def',{opacity:1, duration: 2, y:-100});
         setTimeout(() => { document.body.style.background = '#000000';}, 2000);
         
-    }
-});
+    }}
+
+    onMount(()=> {
+        gsap.registerPlugin(ScrollTrigger);
+        init();
+    })
+
+    onDestroy(() => {
+    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    });
+    
 </script>
 
-<style>
+<style lang="css">
     :global(body) {
         background: linear-gradient(109.6deg, rgb(238, 164, 179) 11.2%, rgb(212, 153, 234) 100%, rgb(150, 121, 255) 100.2%);
         overflow-x: hidden
