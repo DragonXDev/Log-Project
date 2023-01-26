@@ -6,7 +6,7 @@
     EXPLORE
 </button>
 
-<div class='cubaseintro'>Let's see a creative way of representing log properties...</div>
+<div class='cubaseintro'>Let's see a creative way of representing log properties. <br>https://drive.google.com/file/d/1sWXJUvgW3pk-7hgIIaFdoqndxz8L7k7t/view?usp=sharing</div>
 <div class='product'>Product Property</div>
 <div class='productdef'>The sum of two logarithms with the same base is equal to the logarithm of the product of the two arguments. <br>log a + log b = log ab</div>
 <div class='productex1'>log 4 + log 3 = log 12</div>
@@ -66,31 +66,31 @@
     gsap.to('.cubaseintro',{scrollTrigger:{start:"-300 top", end: "500px start",trigger:'.cubaseintro', pin:true}})
     gsap.to('.cubaseintro',{scrollTrigger: {start: "-300 top", trigger: '.cubaseintro', toggleActions:"play none none reverse"},x:-1650})
     gsap.to('.product',{scrollTrigger:{ trigger: '.product', start:'-250 top',end:'200px start'},opacity:1, duration: 2, y:-175});
-    gsap.to('.productdef',{scrollTrigger:{ trigger: '.productdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1800});
+    gsap.to('.productdef',{scrollTrigger:{ trigger: '.productdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1400});
     gsap.to('.productex1',{scrollTrigger:{trigger:'.productex1',start:'-1000 top', end: "200px start"},opacity: 1, duration: 2, y: -200});
     gsap.to('.productex2',{scrollTrigger:{trigger:'.productex2',start:'-1000 top', end: "200px start"},opacity: 1, duration: 3, y: -200});
     gsap.to('.productex3',{scrollTrigger:{trigger:'.productex3',start:'-1000 top', end: "200px start"},opacity: 1, duration: 4, y: -200});
 
     gsap.to('.quotient',{scrollTrigger:{ trigger: '.quotient', start:'-250 top',end:'200px start'},opacity:1, duration: 2, y:-175});
-    gsap.to('.quotientdef',{scrollTrigger:{ trigger: '.quotientdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1800});
+    gsap.to('.quotientdef',{scrollTrigger:{ trigger: '.quotientdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1400});
     gsap.to('.quotientex1',{scrollTrigger:{trigger:'.quotientex1',start:'-1000 top', end: "200px start"},opacity: 1, duration: 2, y: -200});
     gsap.to('.quotientex2',{scrollTrigger:{trigger:'.quotientex2',start:'-1000 top', end: "200px start"},opacity: 1, duration: 3, y: -200});
     gsap.to('.quotientex3',{scrollTrigger:{trigger:'.quotientex3',start:'-1000 top', end: "200px start"},opacity: 1, duration: 4, y: -200});
 
     gsap.to('.power',{scrollTrigger:{ trigger: '.power', start:'-250 top',end:'200px start'},opacity:1, duration: 2, y:-175});
-    gsap.to('.powerdef',{scrollTrigger:{ trigger: '.powerdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1800});
+    gsap.to('.powerdef',{scrollTrigger:{ trigger: '.powerdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1400});
     gsap.to('.powerex1',{scrollTrigger:{trigger:'.powerex1',start:'-1000 top', end: "200px start"},opacity: 1, duration: 2, y: -200});
     gsap.to('.powerex2',{scrollTrigger:{trigger:'.powerex2',start:'-1000 top', end: "200px start"},opacity: 1, duration: 3, y: -200});
     gsap.to('.powerex3',{scrollTrigger:{trigger:'.powerex3',start:'-1000 top', end: "200px start"},opacity: 1, duration: 4, y: -200});
 
     gsap.to('.inv',{scrollTrigger:{ trigger: '.inv', start:'-250 top',end:'200px start'},opacity:1, duration: 2, y:-175});
-    gsap.to('.invdef',{scrollTrigger:{ trigger: '.invdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1800});
+    gsap.to('.invdef',{scrollTrigger:{ trigger: '.invdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1400});
     gsap.to('.invex1',{scrollTrigger:{trigger:'.invex1',start:'-1000 top', end: "200px start"},opacity: 1, duration: 2, y: -200});
     gsap.to('.invex2',{scrollTrigger:{trigger:'.invex2',start:'-1000 top', end: "200px start"},opacity: 1, duration: 3, y: -200});
     gsap.to('.invex3',{scrollTrigger:{trigger:'.invex3',start:'-1000 top', end: "200px start"},opacity: 1, duration: 4, y: -200});
 
     gsap.to('.cob',{scrollTrigger:{ trigger: '.cob', start:'-250 top',end:'200px start'},opacity:1, duration: 2, y:-175});
-    gsap.to('.cobdef',{scrollTrigger:{ trigger: '.cobdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1800});
+    gsap.to('.cobdef',{scrollTrigger:{ trigger: '.cobdef', start:'-650 top',end:'200px start'},opacity:1, duration: 2, y:-325, x:1400});
     gsap.to('.cobex1',{scrollTrigger:{trigger:'.cobex1',start:'-1000 top', end: "200px start"},opacity: 1, duration: 2, y: -200});
     gsap.to('.cobex2',{scrollTrigger:{trigger:'.cobex2',start:'-1000 top', end: "200px start"},opacity: 1, duration: 3, y: -200});
     gsap.to('.cobex3',{scrollTrigger:{trigger:'.cobex3',start:'-1000 top', end: "200px start"},opacity: 1, duration: 4, y: -200});
@@ -448,7 +448,7 @@
         position: relative;
     text-align: center;
     line-height: 100px;
-    font-size: 50px;
+    font-size: 40px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: -25%;
     margin-top: 50px;
@@ -462,7 +462,7 @@
         position: relative;
     text-align: center;
     line-height: 100px;
-    font-size: 50px;
+    font-size: 40px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 10%;
     margin-top: -300px;
@@ -476,7 +476,7 @@
         position: relative;
     text-align: center;
     line-height: 100px;
-    font-size: 50px;
+    font-size: 40px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 42%;
     margin-top: -300px;
@@ -493,7 +493,7 @@
         position: relative;
     text-align: center;
     line-height: 170px;
-    font-size: 150px;
+    font-size: 120px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: -25%;
     margin-top: 2450px;
@@ -537,8 +537,8 @@
     line-height: 100px;
     font-size: 30px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 0%;
-    margin-top: -300px;
+    margin-left: -25%;
+    margin-top: -240px;
     width: 80%;
     height: 300px; 
     opacity: 0; 
@@ -551,8 +551,8 @@
     line-height: 100px;
     font-size: 30px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 35%;
-    margin-top: -300px;
+    margin-left: 25%;
+    margin-top: -330px;
     width: 80%;
     height: 300px; 
     opacity: 0; 
