@@ -1,10 +1,10 @@
 <div class='title'>The Log Project</div>
-<div class='def' id="abyss">Whelcome to the abyss.</div>
 <div class='def' id = "def">What is a log?</div>
 <div class='scroller'></div>
 <button class='btn' id='explore'>
     EXPLORE
-  </button>
+</button>
+
 <script>
     import {gsap} from "gsap";
     import {ScrollTrigger} from "gsap/dist/ScrollTrigger.js";
