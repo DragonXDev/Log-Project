@@ -1,9 +1,11 @@
 <div class='title'>The Log Project</div>
 <div class='def' id = "def">What is a log?</div>
+<div class='ldef' id = "ldef">A log is a quantity representing the power to which a fixed number, or the base, must be raised to produce a given number.</div>
 <div class='scroller'></div>
 <button class='btn' id='explore'>
     EXPLORE
 </button>
+<div class='cubaseintro'>Let's see a creative way of representing log properties...</div>
 
 <script>
     import {gsap} from "gsap";
@@ -29,9 +31,11 @@
         
         var intro=gsap.timeline()
         intro.to('.title',{scale:600, ease:"expo.out",duration:4})
-        .to('#def',{opacity:1, duration: 2, y:-100});
+        .to('#def',{opacity:1, duration: 2, y:-70}).to('#ldef',{opacity:1, duration: 2, y:-100});;
         setTimeout(() => { document.body.style.background = '#000000';}, 2000);
-        
+    
+    gsap.to('.cubaseintro',{scrollTrigger:{start:"-300 top", end: "500px start",trigger:'.cubaseintro', pin:true}})
+    gsap.to('.cubaseintro',{scrollTrigger: {start: "-300 top", trigger: '.cubaseintro', toggleActions:"play none none reverse"},x:-1650})
     }}
 
     onMount(()=> {
@@ -42,7 +46,7 @@
     onDestroy(() => {
     ScrollTrigger.getAll().forEach(trigger => trigger.kill());
     });
-    
+
 </script>
 
 <style lang="css">
@@ -60,7 +64,7 @@
     position: absolute;
     top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-10%);
     font-size: 40px;
     font-weight: 500;
     padding: 35px 70px;
@@ -86,14 +90,15 @@
     position: relative;
     text-align: center;
     line-height: 170px;
-    font-size: 150px;
+    font-size: 140px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            src: url('webfont.svg#BlinkMacSystemFont') format('svg');
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: -25%;
-    margin-top: 250px;
+    margin-top: 150px;
     width: 150%;
     height: 300px;  
     }
-
     .def {
     position: relative;
     text-align: center;
@@ -108,4 +113,34 @@
     color: white
 
     }
+
+    .ldef {
+    position: relative;
+    text-align: center;
+    line-height: 140px;
+    font-size: 55px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10%;
+    margin-top: -80px;
+    width: 80%;
+    height: 300px;  
+    opacity: 0;
+    color: white
+
+    }
+
+    .cubaseintro {
+        position: relative;
+        text-align: center;
+        line-height: 140px;
+        font-size: 55px;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: -49750px;
+        margin-left: 120%;
+        width: 90%;
+        height: 300px;  
+        color: white
+    
+    }
+
 </style>
