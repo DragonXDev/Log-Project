@@ -36,7 +36,7 @@
 });
 </script>
 
-<style>
+<style lang="css">
     :global(body) {
         background: linear-gradient(109.6deg, rgb(238, 164, 179) 11.2%, rgb(212, 153, 234) 100%, rgb(150, 121, 255) 100.2%);
         overflow-x: hidden
